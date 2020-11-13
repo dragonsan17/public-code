@@ -23,7 +23,7 @@ gtFine/{split}/{drive_no}/{img_id}_gtFine_labellevel3Ids.png
 
 ## Labels
 
-See helpers/anue_labels.py
+See preparation/anue_labels.py
 
 ### Generate Label Masks for Semantic Segmentation(for training/evaluation)
 
