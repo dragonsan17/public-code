@@ -29,10 +29,10 @@ See preparation/anue_labels.py
 
 For the semantic segmentation challenge, masks should be generated using IDTYPE of level3Id and used for training models (similar to trainId in cityscapes). This can be done by the command:
 ```bash
-python preperation/createLabels.py --datadir $ANUE --id-type level3Id --num-workers $C
+python preperation/createLabels.py --datadir $IDD --id-type level3Id --num-workers $C
 ```
 
-- ANUE is the path to the AutoNUE dataset
+- IDD is the path to the IDD dataset
 - IDTYPE can be id, csId, csTrainId, level3Id, level2Id, level1Id.
 - C is the number of threads to run in parallel
 
@@ -45,7 +45,7 @@ The generated files:
 
 First generate label masks as described above. To view the ground truths / prediction masks at different levels of heirarchy use:
 ```bash
-python viewer/viewer.py ---datadir $ANUE
+python viewer/viewer.py ---datadir $IDD
 ```
 
 - ANUE has the folder path to the dataset or prediction masks with similar file/folder structure as dataset.
