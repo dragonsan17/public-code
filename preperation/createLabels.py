@@ -73,8 +73,9 @@ def main(args):
     files = filesFine
 
     if not files:
-        tqdm.writeError(
+        tqdm.write(
             "Did not find any files. Please consult the README.")
+        return
 
     # a bit verbose
     tqdm.write(
